@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>cn.pfinal.club.pfrule.plugin</id>
+    <name>Rule</name>
+    <version>1.0.0</version>
+    <vendor email="lampxiezi@163.com" url="http://friday-go.cc">PFinal南丞</vendor>
+
+    <description><![CDATA[
+        <h2></h2>
+        <p>The plug-in is PHP commonly used regular expression collection</p>
+        ]]></description>
+
+    <change-notes><![CDATA[
+        <h2>Rule live templates / snippets</h2>
+        ]]>
+  </change-notes>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <defaultLiveTemplates file="/liveTemplates/Rule.xml"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="check_all" class="CheckAllRule" text="查看所有" description="查看所有的正则">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt DOWN" second-keystroke="shift alt RIGHT"/>
+        </action>
+    </actions>
+
+</idea-plugin>
