@@ -24,11 +24,13 @@
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
         <defaultLiveTemplates file="/liveTemplates/Rule.xml"/>
+        <toolWindow canCloseContents="true" anchor="right" id="RuleList" factoryClass="RuleListWinFactory">
+        </toolWindow>
     </extensions>
 
     <actions>
         <!-- Add your actions here -->
-        <action id="check_all" class="CheckAllRule" text="查看所有" description="查看所有的正则">
+        <action id="check_all" class="CheckAllRule" text="Check_Rule" description="查看所有的正则">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift alt DOWN" second-keystroke="shift alt RIGHT"/>
         </action>
