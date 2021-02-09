@@ -23,8 +23,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <defaultLiveTemplates file="/liveTemplates/Rule.xml"/>
-        <toolWindow canCloseContents="true" anchor="right" id="RuleList" factoryClass="RuleListWinFactory">
+        <toolWindow canCloseContents="true" anchor="right" id="RuleList" factoryClass="RuleListFactory">
         </toolWindow>
     </extensions>
 
