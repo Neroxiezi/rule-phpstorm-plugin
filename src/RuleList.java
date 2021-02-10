@@ -13,7 +13,7 @@ public class RuleList {
     private JTable rule;
     public RuleList(Project project, @NotNull ToolWindow toolWindow) {
         DataCenter dataCenter;
-        dataCenter = new DataCenter();
+        dataCenter = new DataCenter(project);
         rule.setModel(dataCenter.TABLE_MODEL);
         toolWindow.show(getRunnable());
     }

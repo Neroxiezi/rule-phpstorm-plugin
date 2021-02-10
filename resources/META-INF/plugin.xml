@@ -25,6 +25,7 @@
         <!-- Add your extensions here -->
         <toolWindow canCloseContents="true" anchor="right" id="RuleList" factoryClass="RuleListFactory">
         </toolWindow>
+        <moduleService serviceInterface="data.RuleListData" serviceImplementation="data.impl.RuleListDataImpl"/>
     </extensions>
 
     <actions>
